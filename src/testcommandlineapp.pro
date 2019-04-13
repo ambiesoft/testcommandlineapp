@@ -4,4 +4,13 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+    ../../lsMisc/CommandLineParser.cpp \
+    ../../lsMisc/UrlEncode.cpp \
+    ../../lsMisc/UTF16toUTF8.cpp
+
+HEADERS += \
+    ../../lsMisc/CommandLineParser.h \
+    stdafx.h \
+    ../../lsMisc/UrlEncode.h \
+    ../../lsMisc/UTF16toUTF8.h
