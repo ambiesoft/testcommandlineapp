@@ -8,6 +8,8 @@
 using namespace Ambiesoft;
 using namespace std;
 
+const char* gLine = "This is a testcommandlineapp";
+
 int main()
 {
     CCommandLineParser parser;
@@ -15,51 +17,59 @@ int main()
     bool bLongOutput = false;
     parser.AddOption(L"-L", 0, &bLongOutput);
 
+    bool bPause = false;
+    parser.AddOption(L"-p", 0, &bPause);
+
     parser.Parse();
 
     if(bLongOutput)
     {
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
-        cout << "jefwojowjofjw343242037403274027040237432535435370707432" << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
+        cout << gLine << endl;
     }
     else
     {
-        cout << "Hello TestCommnadLineApp!" << endl;
+        cout << gLine << endl;
     }
 
+    if(bPause)
+    {
+        cout << "Hit any key to quit...";
+        _getwch();
+    }
     return 0;
 }
