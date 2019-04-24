@@ -20,6 +20,9 @@ int main()
     bool bPause = false;
     parser.AddOption(L"-p", 0, &bPause);
 
+    bool bInteractive=false;
+    parser.AddOption(L"-i", 0, &bInteractive);
+
     parser.Parse();
 
     if(bLongOutput)
@@ -70,6 +73,30 @@ int main()
     {
         cout << "Hit any key to quit...";
         _getwch();
+    }
+
+    if(bInteractive)
+    {
+        for(;;)
+        {
+            if(!cin)
+                break;
+
+            cout << "> " ;
+            string command ;
+
+            cin >> command;
+
+            if(!cin)
+                break;
+            if(command=="exit")
+                break;
+
+            cout << "You entered '" << command << "'" << " (Enter 'exit' to exit)";
+        }
+
+
+
     }
     return 0;
 }
