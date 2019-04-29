@@ -8,7 +8,7 @@
 using namespace Ambiesoft;
 using namespace std;
 
-const char* gLine = "This is a testcommandlineapp";
+const char gLine[] = "This is a testcommandlineapp";
 
 int main()
 {
